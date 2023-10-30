@@ -6,8 +6,17 @@ public class Palindrome {
 
     }
 
-    public int parolePalindrome(String stringa1) {
+    public int parolePalindrome(String stringa) {
+        int parolePalindrome = 0;
+        String[] stringhe = stringa.split(" ");
+        for(String s : stringhe){
+            if(palindroma(s))
+                parolePalindrome++;
+        }
+        return parolePalindrome;
+    }
 
-        return 0;
+    boolean palindroma(String s){
+        return s.equalsIgnoreCase(new StringBuilder(s).reverse().toString());
     }
 }
