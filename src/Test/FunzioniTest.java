@@ -35,8 +35,12 @@ public class FunzioniTest {
 
     @Test
     public void PalindromeTest(){
-        String stringa1 = "Bob ama Eva ed Ada";
+        String stringa1 = "Bob ama Anna ed Ada";
+        String stringa2 = "Il radar avvista i nemici";
+        String stringa3 = "Il gatto corre";
         Assert.assertEquals("Numero parole palindrome sbagliato", 4 , p.parolePalindrome(stringa1));
+        Assert.assertEquals("Numero parole palindrome sbagliato", 2 , p.parolePalindrome(stringa2));
+        Assert.assertEquals("Numero parole palindrome sbagliato", 0 , p.parolePalindrome(stringa3));
     }
 
     @Test
